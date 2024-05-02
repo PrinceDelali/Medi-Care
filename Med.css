@@ -4,15 +4,25 @@
     box-sizing: border-box;
 }
 
-.nav-link {
+/* Root Colors */
+:root{
+    --background-color: #274848;
+
+}
+
+
+/* Navigation */
+.navbar-nav .nav-link {
     font-size: x-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-right: 10px;
-    color: black;
+    color: black !important;
 }
 
 .nav-link:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid var(--background-color);
+
 }
 
 .btn {
@@ -20,13 +30,13 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 90px;
     height: 40px;
-    background-color: black;
+    background-color: var(--background-color);
     color: white;
     margin-right: 30px;
     border-radius: 6px;
 }
 
-.btn3 {
+/* .btn3 {
     font-weight: 800;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 90px;
@@ -35,12 +45,10 @@
     margin-right: 30px;
     font-size: x-large;
     text-decoration: none;
-}
+} */
 
-.btn3:hover{
-    color: black;
-}
 
 .btn:hover{
     color: white;
+    background-color: #498787;
 }
