@@ -85,3 +85,7 @@
 .social-links:hover{
     color: var(--hover-color);
 }
+
+.slider1 {
+    background-image: url("https://reapp.com.gh/wp-content/uploads/2021/06/41zb3AxXEGL.jpg");
+}
