@@ -128,4 +128,12 @@
         box-shadow: 0px -3px 11px -4px rgba(0, 0, 0, 0.66);
             -webkit-box-shadow: 0px -3px 11px -4px rgba(0, 0, 0, 0.66);
             -moz-box-shadow: 0px -3px 11px -4px rgba(0, 0, 0, 0.66);
+            
+}
+
+.card:hover {
+    box-shadow: -19px 5px 51px 0px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: -19px 5px 51px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: -19px 5px 51px 0px rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
 }
