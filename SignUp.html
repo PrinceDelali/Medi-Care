@@ -14,6 +14,44 @@
             font-family: Arial, sans-serif;
         }
 
+        /* Root Colors */
+        :root {
+            --background-color: #274848;
+            --hover-color: #498787;
+        }
+
+
+        /* Navigation */
+        .navbar-nav .nav-link {
+            font-size: x-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-right: 10px;
+            color: black !important;
+            margin-left: 20px;
+        }
+
+        .nav-link:hover {
+            /* text-decoration: underline; */
+            border-bottom: 2px solid var(--background-color);
+        }
+
+        .btn {
+            font-weight: 800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 90px;
+            height: 40px;
+            background-color: var(--background-color);
+            color: white;
+            margin-right: 30px;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: var(--hover-color);
+        }
+
+
         .signup-container {
             margin-top: 100px;
         }
@@ -61,6 +99,34 @@
 </head>
 
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://assets-global.website-files.com/63a9fb94e473f36dbe99c1b1/651bc933da4c4809317d9721_kXa8JqIBRnCMtZnHkb1u.png"
+                    alt="Logo" width="130px" height="90px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAlgtMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link" href="Med.html">Home</a>
+                    <a class="nav-link" href="Services.html">Services</a>
+                    <a class="nav-link" href="Learn.html">Learn</a>
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                    <a class="nav-link" href="Shop.html">Shop</a>
+                    <a class="nav-link" href="Account.html">Account</a>
+                </div>
+                <form class="d-flex justify-content-between">
+                    <a class="btn btn-primary" href="Login.html" role="button">Login</a>
+                    <a class="btn btn-primary" href="SignUp.html" role="button">Sign Up</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
 
     <div class="container">
         <div class="row justify-content-center">
