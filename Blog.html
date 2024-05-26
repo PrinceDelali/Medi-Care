@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Your Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styles for the blog page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+
+        /* Root Colors */
+        :root {
+            --background-color: #274848;
+            --hover-color: #498787;
+        }
+
+
+        /* Navigation */
+        .navbar-nav .nav-link {
+            font-size: x-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-right: 10px;
+            color: black !important;
+            margin-left: 20px;
+        }
+
+        .nav-link:hover {
+            /* text-decoration: underline; */
+            border-bottom: 2px solid var(--background-color);
+        }
+
+        .btn {
+            font-weight: 800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 90px;
+            height: 40px;
+            background-color: var(--background-color);
+            color: white;
+            margin-right: 30px;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: var(--hover-color);
+        }
+
+
+        .container {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .blog-post {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post h2 {
+            color: #007bff;
+        }
+
+        .blog-post p {
+            line-height: 1.6;
+        }
+
+        .blog-post .meta {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .blog-post .meta i {
+            margin-right: 5px;
+        }
+
+        .footer-links {
+            font-size: 14px;
+            margin-top: 15px;
+            line-height: 30px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: var(--background-color);
+            display: block;
+        }
+
+        .footer-links a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+
+        .social-links {
+            align-content: center;
+            padding: 10px 20px;
+            cursor: pointer;
+
+        }
+
+
+        .background {
+            background-color: var(--background-color)
+        }
+
+        .footer-links a {
+            color: white;
+            line-height: 35px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://assets-global.website-files.com/63a9fb94e473f36dbe99c1b1/651bc933da4c4809317d9721_kXa8JqIBRnCMtZnHkb1u.png"
+                    alt="Logo" width="130px" height="90px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAlgtMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link" href="Med.html">Home</a>
+                    <a class="nav-link" href="Services.html">Services</a>
+                    <a class="nav-link" href="Learn.html">Learn</a>
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                    <a class="nav-link" href="Shop.html">Shop</a>
+                    <a class="nav-link" href="Account.html">Account</a>
+                </div>
+                <form class="d-flex justify-content-between">
+                    <a class="btn btn-primary" href="Login.html" role="button">Login</a>
+                    <a class="btn btn-primary" href="SignUp.html" role="button">Sign Up</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Include your navigation bar here -->
+
+    <!-- Blog Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="blog-post">
+                    <h2>Case study:Cost of dialysis at Korle Bu Teaching Hospital increased to GHC491</h2>
+                    <div class="meta">
+                        <i class="fas fa-calendar-alt"></i> April 15, 2024
+                        <i class="fas fa-user"></i> Prince Delali
+                    </div>
+                    <p>In this case study, we examine the factors contributing to the outbreak of malaria in Africa, the
+                        challenges faced in
+                        combating the disease, and the strategies implemented to control its spread.</p>
+                    <h3>Background:</h3>
+                    <p>Malaria is a mosquito-borne infectious disease caused by Plasmodium parasites. In Africa, it is a
+                        major public health
+                        concern, with millions of cases reported annually, particularly in sub-Saharan Africa.</p>
+                    <h3>Factors Contributing to the Outbreak:</h3>
+                    <ul>
+                        <li>Proliferation of Anopheles mosquitoes, the primary vector for malaria transmission, due to
+                            favorable
+                            environmental conditions.</li>
+                        <li>Lack of access to effective prevention measures such as insecticide-treated bed nets and
+                            indoor residual
+                            spraying.</li>
+                        <li>Limited availability of healthcare facilities and resources for malaria diagnosis and
+                            treatment.</li>
+                        <li>Population movement and displacement, leading to the spread of the disease to new areas.
+                        </li>
+                    </ul>
+                    <h3>Challenges Faced:</h3>
+                    <ul>
+                        <li>Inadequate funding for malaria control programs and research initiatives.</li>
+                        <li>Resistance to antimalarial drugs and insecticides by malaria parasites and mosquitoes,
+                            respectively.</li>
+                        <li>Social and cultural factors influencing healthcare-seeking behavior and adherence to
+                            preventive measures.</li>
+                        <li>Weak healthcare infrastructure and workforce capacity in endemic regions.</li>
+                    </ul>
+                    <h3>Strategies Implemented:</h3>
+                    <ul>
+                        <li>Scale-up of vector control interventions such as insecticide-treated bed nets and indoor
+                            residual spraying.</li>
+                        <li>Expansion of access to antimalarial drugs and diagnostics through community-based
+                            initiatives and mobile
+                            healthcare services.</li>
+                        <li>Advocacy and partnerships to mobilize political commitment and resources for malaria control
+                            and elimination
+                            efforts.</li>
+                        <li>Research and innovation in new tools and strategies for malaria prevention, diagnosis, and
+                            treatment.</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Read</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Add more blog posts here -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="blog-post">
+                    <h2>Case study:‘I am not ready to die’ – Young mother on quest to quit drug, alcohol addiction</h2>
+                    <div class="meta">
+                        <i class="fas fa-calendar-alt"></i> April 15, 2024
+                        <i class="fas fa-user"></i> Prince Delali
+                    </div>
+                    <p>In this case study, we examine the factors contributing to the outbreak of malaria in Africa, the
+                        challenges faced in
+                        combating the disease, and the strategies implemented to control its spread.</p>
+                    <h3>Background:</h3>
+                    <p>Malaria is a mosquito-borne infectious disease caused by Plasmodium parasites. In Africa, it is a
+                        major public health
+                        concern, with millions of cases reported annually, particularly in sub-Saharan Africa.</p>
+                    <h3>Factors Contributing to the Outbreak:</h3>
+                    <ul>
+                        <li>Proliferation of Anopheles mosquitoes, the primary vector for malaria transmission, due to
+                            favorable
+                            environmental conditions.</li>
+                        <li>Lack of access to effective prevention measures such as insecticide-treated bed nets and
+                            indoor residual
+                            spraying.</li>
+                        <li>Limited availability of healthcare facilities and resources for malaria diagnosis and
+                            treatment.</li>
+                        <li>Population movement and displacement, leading to the spread of the disease to new areas.
+                        </li>
+                    </ul>
+                    <h3>Challenges Faced:</h3>
+                    <ul>
+                        <li>Inadequate funding for malaria control programs and research initiatives.</li>
+                        <li>Resistance to antimalarial drugs and insecticides by malaria parasites and mosquitoes,
+                            respectively.</li>
+                        <li>Social and cultural factors influencing healthcare-seeking behavior and adherence to
+                            preventive measures.</li>
+                        <li>Weak healthcare infrastructure and workforce capacity in endemic regions.</li>
+                    </ul>
+                    <h3>Strategies Implemented:</h3>
+                    <ul>
+                        <li>Scale-up of vector control interventions such as insecticide-treated bed nets and indoor
+                            residual spraying.</li>
+                        <li>Expansion of access to antimalarial drugs and diagnostics through community-based
+                            initiatives and mobile
+                            healthcare services.</li>
+                        <li>Advocacy and partnerships to mobilize political commitment and resources for malaria control
+                            and elimination
+                            efforts.</li>
+                        <li>Research and innovation in new tools and strategies for malaria prevention, diagnosis, and
+                            treatment.</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Read</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="blog-post">
+                    <h2>Case study:National Covid-19 vaccination campaign: Over 370k doses of vaccines administered so
+                        far</h2>
+                    <div class="meta">
+                        <i class="fas fa-calendar-alt"></i> April 15, 2024
+                        <i class="fas fa-user"></i> Prince Delali
+                    </div>
+                    <p>In this case study, we examine the factors contributing to the outbreak of malaria in Africa, the
+                        challenges faced in
+                        combating the disease, and the strategies implemented to control its spread.</p>
+                    <h3>Background:</h3>
+                    <p>Malaria is a mosquito-borne infectious disease caused by Plasmodium parasites. In Africa, it is a
+                        major public health
+                        concern, with millions of cases reported annually, particularly in sub-Saharan Africa.</p>
+                    <h3>Factors Contributing to the Outbreak:</h3>
+                    <ul>
+                        <li>Proliferation of Anopheles mosquitoes, the primary vector for malaria transmission, due to
+                            favorable
+                            environmental conditions.</li>
+                        <li>Lack of access to effective prevention measures such as insecticide-treated bed nets and
+                            indoor residual
+                            spraying.</li>
+                        <li>Limited availability of healthcare facilities and resources for malaria diagnosis and
+                            treatment.</li>
+                        <li>Population movement and displacement, leading to the spread of the disease to new areas.
+                        </li>
+                    </ul>
+                    <h3>Challenges Faced:</h3>
+                    <ul>
+                        <li>Inadequate funding for malaria control programs and research initiatives.</li>
+                        <li>Resistance to antimalarial drugs and insecticides by malaria parasites and mosquitoes,
+                            respectively.</li>
+                        <li>Social and cultural factors influencing healthcare-seeking behavior and adherence to
+                            preventive measures.</li>
+                        <li>Weak healthcare infrastructure and workforce capacity in endemic regions.</li>
+                    </ul>
+                    <h3>Strategies Implemented:</h3>
+                    <ul>
+                        <li>Scale-up of vector control interventions such as insecticide-treated bed nets and indoor
+                            residual spraying.</li>
+                        <li>Expansion of access to antimalarial drugs and diagnostics through community-based
+                            initiatives and mobile
+                            healthcare services.</li>
+                        <li>Advocacy and partnerships to mobilize political commitment and resources for malaria control
+                            and elimination
+                            efforts.</li>
+                        <li>Research and innovation in new tools and strategies for malaria prevention, diagnosis, and
+                            treatment.</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Read</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="blog-post">
+                    <h2>Case study:Smoking ‘Shisha’ and oral sex can cause throat cancer – Dr. Ama Boatemaa Prah</h2>
+                    <div class="meta">
+                        <i class="fas fa-calendar-alt"></i> April 15, 2024
+                        <i class="fas fa-user"></i> Prince Delali
+                    </div>
+                    <p>In this case study, we examine the factors contributing to the outbreak of malaria in Africa, the
+                        challenges faced in
+                        combating the disease, and the strategies implemented to control its spread.</p>
+                    <h3>Background:</h3>
+                    <p>Malaria is a mosquito-borne infectious disease caused by Plasmodium parasites. In Africa, it is a
+                        major public health
+                        concern, with millions of cases reported annually, particularly in sub-Saharan Africa.</p>
+                    <h3>Factors Contributing to the Outbreak:</h3>
+                    <ul>
+                        <li>Proliferation of Anopheles mosquitoes, the primary vector for malaria transmission, due to
+                            favorable
+                            environmental conditions.</li>
+                        <li>Lack of access to effective prevention measures such as insecticide-treated bed nets and
+                            indoor residual
+                            spraying.</li>
+                        <li>Limited availability of healthcare facilities and resources for malaria diagnosis and
+                            treatment.</li>
+                        <li>Population movement and displacement, leading to the spread of the disease to new areas.
+                        </li>
+                    </ul>
+                    <h3>Challenges Faced:</h3>
+                    <ul>
+                        <li>Inadequate funding for malaria control programs and research initiatives.</li>
+                        <li>Resistance to antimalarial drugs and insecticides by malaria parasites and mosquitoes,
+                            respectively.</li>
+                        <li>Social and cultural factors influencing healthcare-seeking behavior and adherence to
+                            preventive measures.</li>
+                        <li>Weak healthcare infrastructure and workforce capacity in endemic regions.</li>
+                    </ul>
+                    <h3>Strategies Implemented:</h3>
+                    <ul>
+                        <li>Scale-up of vector control interventions such as insecticide-treated bed nets and indoor
+                            residual spraying.</li>
+                        <li>Expansion of access to antimalarial drugs and diagnostics through community-based
+                            initiatives and mobile
+                            healthcare services.</li>
+                        <li>Advocacy and partnerships to mobilize political commitment and resources for malaria control
+                            and elimination
+                            efforts.</li>
+                        <li>Research and innovation in new tools and strategies for malaria prevention, diagnosis, and
+                            treatment.</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Read</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="blog-post">
+                    <h2>Case study:Over 2k children born with cleft lip benefit from corrective surgeries at KATH</h2>
+                    <div class="meta">
+                        <i class="fas fa-calendar-alt"></i> April 15, 2024
+                        <i class="fas fa-user"></i> Prince Delali
+                    </div>
+                    <p>In this case study, we examine the factors contributing to the outbreak of malaria in Africa, the
+                        challenges faced in
+                        combating the disease, and the strategies implemented to control its spread.</p>
+                    <h3>Background:</h3>
+                    <p>Malaria is a mosquito-borne infectious disease caused by Plasmodium parasites. In Africa, it is a
+                        major public health
+                        concern, with millions of cases reported annually, particularly in sub-Saharan Africa.</p>
+                    <h3>Factors Contributing to the Outbreak:</h3>
+                    <ul>
+                        <li>Proliferation of Anopheles mosquitoes, the primary vector for malaria transmission, due to
+                            favorable
+                            environmental conditions.</li>
+                        <li>Lack of access to effective prevention measures such as insecticide-treated bed nets and
+                            indoor residual
+                            spraying.</li>
+                        <li>Limited availability of healthcare facilities and resources for malaria diagnosis and
+                            treatment.</li>
+                        <li>Population movement and displacement, leading to the spread of the disease to new areas.
+                        </li>
+                    </ul>
+                    <h3>Challenges Faced:</h3>
+                    <ul>
+                        <li>Inadequate funding for malaria control programs and research initiatives.</li>
+                        <li>Resistance to antimalarial drugs and insecticides by malaria parasites and mosquitoes,
+                            respectively.</li>
+                        <li>Social and cultural factors influencing healthcare-seeking behavior and adherence to
+                            preventive measures.</li>
+                        <li>Weak healthcare infrastructure and workforce capacity in endemic regions.</li>
+                    </ul>
+                    <h3>Strategies Implemented:</h3>
+                    <ul>
+                        <li>Scale-up of vector control interventions such as insecticide-treated bed nets and indoor
+                            residual spraying.</li>
+                        <li>Expansion of access to antimalarial drugs and diagnostics through community-based
+                            initiatives and mobile
+                            healthcare services.</li>
+                        <li>Advocacy and partnerships to mobilize political commitment and resources for malaria control
+                            and elimination
+                            efforts.</li>
+                        <li>Research and innovation in new tools and strategies for malaria prevention, diagnosis, and
+                            treatment.</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Read</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="blog-post">
+                    <h2>Case study:Stacked up medical supplies: Global Fund to advise itself if not cleared</h2>
+                    <div class="meta">
+                        <i class="fas fa-calendar-alt"></i> April 15, 2024
+                        <i class="fas fa-user"></i> Prince Delali
+                    </div>
+                    <p>In this case study, we examine the factors contributing to the outbreak of malaria in Africa, the
+                        challenges faced in
+                        combating the disease, and the strategies implemented to control its spread.</p>
+                    <h3>Background:</h3>
+                    <p>Malaria is a mosquito-borne infectious disease caused by Plasmodium parasites. In Africa, it is a
+                        major public health
+                        concern, with millions of cases reported annually, particularly in sub-Saharan Africa.</p>
+                    <h3>Factors Contributing to the Outbreak:</h3>
+                    <ul>
+                        <li>Proliferation of Anopheles mosquitoes, the primary vector for malaria transmission, due to
+                            favorable
+                            environmental conditions.</li>
+                        <li>Lack of access to effective prevention measures such as insecticide-treated bed nets and
+                            indoor residual
+                            spraying.</li>
+                        <li>Limited availability of healthcare facilities and resources for malaria diagnosis and
+                            treatment.</li>
+                        <li>Population movement and displacement, leading to the spread of the disease to new areas.
+                        </li>
+                    </ul>
+                    <h3>Challenges Faced:</h3>
+                    <ul>
+                        <li>Inadequate funding for malaria control programs and research initiatives.</li>
+                        <li>Resistance to antimalarial drugs and insecticides by malaria parasites and mosquitoes,
+                            respectively.</li>
+                        <li>Social and cultural factors influencing healthcare-seeking behavior and adherence to
+                            preventive measures.</li>
+                        <li>Weak healthcare infrastructure and workforce capacity in endemic regions.</li>
+                    </ul>
+                    <h3>Strategies Implemented:</h3>
+                    <ul>
+                        <li>Scale-up of vector control interventions such as insecticide-treated bed nets and indoor
+                            residual spraying.</li>
+                        <li>Expansion of access to antimalarial drugs and diagnostics through community-based
+                            initiatives and mobile
+                            healthcare services.</li>
+                        <li>Advocacy and partnerships to mobilize political commitment and resources for malaria control
+                            and elimination
+                            efforts.</li>
+                        <li>Research and innovation in new tools and strategies for malaria prevention, diagnosis, and
+                            treatment.</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Read</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <!--============Footer=============-->
+    <div class="background py-3">
+        <div class="col-md-8 offset-md-2">
+            <div class="row text-center">
+                <div class="col-md 4">
+                    <h5 class="text-white weight">ABOUT</h5>
+                    <div class="text-dark footer-links">
+                        <p class="text-white">
+                            Enth Health is a healthcare Organization created in 2024 by leading oncologist
+                        </p>
+
+                        <a href="#" class="text-nowrap">Miss Suzzy Sena Ansah</a>
+                    </div>
+                </div>
+                <div class="col-md 4">
+                    <h5 class="text-white text-center weight">ADDRESS</h5>
+                    <div class="text-dark footer-links text-center">
+                        <p class="text-white">No 24th Circle street, industrial area <br />Accra Ghana</p>
+                        <a href="" type="tel" class="text-nowrap">+233 595 063 612</a>
+                        <a href="#" class="text-nowrap">help@gmail.com</a>
+                        <a href="#" class="text-nowrap">princedelali30@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md 4">
+                    <h5 class="text-white text-nowrap weight">OTHER</h5>
+                    <div class="text-dark footer-links">
+                        <a href="#" class="text-nowrap">Return and Refund Policy</a>
+                        <a href="#" class="text-nowrap">Shopping Policy</a>
+                        <a href="#" class="text-nowrap">Privacy Policy</a>
+                        <a href="#" class="text-nowrap">Security</a>
+                        <a href="#" class="text-nowrap">Services</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container mt-4 pb-0">
+            <div class="row down">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <div class="image1 social-links"><img
+                            src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338507_1280.png" alt=""
+                            width="35px" height=""></div>
+                    <div class="image2 social-links"><img
+                            src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png" alt=""
+                            width="35px" height=""></div>
+                    <div class="image3 social-links"><img
+                            src="https://cdn-icons-png.freepik.com/256/124/124021.png?semt=ais_hybrid" alt=""
+                            width="35px" height="">
+                    </div>
+                    <div class="image4 social-links"><img
+                            src="https://cdn.iconscout.com/icon/free/png-256/free-gmail-2981844-2476484.png?f=webp"
+                            alt="" width="35px" height=""></div>
+                </div>
+            </div>
+            <p class="text-center text-white">&copy; 2024 Eith Health Service</p>
+        </div>
+    </div>
+    <!--=========End of Footer============-->
+
+
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+<!-- Include your footer here -->
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Font Awesome JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+
+</html>
