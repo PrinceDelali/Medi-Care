@@ -1,484 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Website</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medical Website</title>
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
 
-  <!-- bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="Med.css" />
+  </head>
 
-  <!-- custom css -->
-  <link rel="stylesheet" href="Med.css">
-</head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://assets-global.website-files.com/63a9fb94e473f36dbe99c1b1/651bc933da4c4809317d9721_kXa8JqIBRnCMtZnHkb1u.png"
+            alt="Logo"
+            width="130px"
+            height="90px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Learn.html">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Account.html">Account</a>
+            </li>
+          </div>
 
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img
-          src="https://assets-global.website-files.com/63a9fb94e473f36dbe99c1b1/651bc933da4c4809317d9721_kXa8JqIBRnCMtZnHkb1u.png"
-          alt="Logo" width="130px" height="90px">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAlgtMarkup">
-        <div class="navbar-nav mx-auto">
-          <a class="nav-link" href="Med.html">Home</a>
-          <a class="nav-link" href="Services.html">Services</a>
-          <a class="nav-link" href="Learn.html">Learn</a>
-          <a class="nav-link" href="Blog.html">Blog</a>
-          <a class="nav-link" href="Shop.html">Shop</a>
-          <a class="nav-link" href="Account.html">Account</a>
+          <form class="form-inline d-flex justify-content-between">
+            <a class="btn btn-primary" href="Login.html" role="button">Login</a>
+            <a class="btn btn-primary" href="SignUp.html" role="button"
+              >Sign Up</a
+            >
+          </form>
         </div>
-        <form class="d-flex justify-content-between">
-          <a class="btn btn-primary" href="Login.html" role="button">Login</a>
-          <a class="btn btn-primary" href="SignUp.html" role="button">Sign Up</a>
-        </form>
+      </div>
+    </nav>
+    <!-- End of Navigation -->
+
+    <!-- Carousel Section -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img
+            src="https://image.made-in-china.com/202f0j00zknbDumRaTot/Medical-Digital-X-ray-Photography-Dystem-Dr-X-Ray-Machine.webp"
+            class="img-fluid align-items-center"
+            alt="Image 1"
+          />
+        </div>
+        <div class="col-md-4">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://viewlightusa.com/wp-content/uploads/2020/01/viewlight_visiontesters_l-7040.jpg"
+                  class="d-block w-100"
+                  alt="Carousel Image 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.anesplus.com/wp-content/uploads/2016/09/Aespire-View-Vaporizer-Selection-1-570x600.jpg"
+                  class="d-block w-100"
+                  alt="Carousel Image 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://med-equip.ca/wp-content/uploads/2019/08/Physio-Control-Lifepak-20e-300x300.jpg"
+                  class="d-block w-100"
+                  alt="Carousel Image 3"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="https://5.imimg.com/data5/BI/OS/SV/SELLER-38436992/edan-m3a-vital-sign-monitors-500x500.jpg"
+                  class="d-block w-100"
+                  alt="Carousel Image 3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2021/12/WD/YX/PQ/13825225/12-1-patient-monitor-500x500-500x500.jpg"
+            class="img-fluid"
+            alt="Image 3"
+          />
+        </div>
       </div>
     </div>
-  </nav>
-  <!-- End Navigation -->
+    <!-- End Carousel Section -->
 
-  <!-- Carousel Section -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <img
-          src="https://image.made-in-china.com/202f0j00zknbDumRaTot/Medical-Digital-X-ray-Photography-Dystem-Dr-X-Ray-Machine.webp"
-          class="img-fluid align-items-center" alt="Image 1">
+    <!--Popular Products Header-->
+    <div class="container height">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="align">
+            <h3><b>Popular Products</b></h3>
+            <h6><b>See all</b></h6>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://viewlightusa.com/wp-content/uploads/2020/01/viewlight_visiontesters_l-7040.jpg"
-                class="d-block w-100" alt="Carousel Image 1">
+    </div>
+    <!--Popular Products End-->
+
+    <!--Popular Products-->
+    <div class="container down">
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="https://www.lakesidemedical.ca/app/uploads/featuredimage-The-Importance-of-Having-a-First-Aid-Kit-in-Your-Home-or-Place-of-Business.jpg"
+              class="card-img-top"
+              alt="Image 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">First Aid Kit</h5>
+              <p class="card-text">
+                Used treat common injuries such as cuts, scrapes, bruises,
+                sprains, and more
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <h4><b>$34.67</b></h4>
+              </div>
             </div>
-            <div class="carousel-item">
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8SGwI5c7zyFCi_Ydd266f8rIEu7JaXKwLL-MRcx81WQ&s"
+              class="card-img-top"
+              alt="Image 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Thermometer</h5>
+              <p class="card-text">
+                Used to measure the temperature of a body and also for
+                substances
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <h4><b>$67.70</b></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="https://wallpapers.com/images/featured/stethoscope-lyo42btur121xglr.jpg"
+              class="card-img-top"
+              alt="Image 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Stethoscope</h5>
+              <p class="card-text">
+                It is used by a doctor to listen to your lungs and heart to
+                identify the root cause of a problem
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <h4><b>$23.56</b></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="https://www.asiaone.com/sites/default/files/inline-images/https%20_hybrismediaprod.blob_.core_.windows.net_sys-master-phoenix-images-container_hf1_he4_9081225609246_RC81-03660100-0000-0.jpg"
+              class="card-img-top"
+              alt="Image 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nose Mask</h5>
+              <p class="card-text">
+                wearing a mask is beneficial in offering protection from
+                pollution and allergens.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <h4><b>$79.99</b></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Laboratory Products Header-->
+    <div class="container height">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="align">
+            <h3><b>Laboratory Products</b></h3>
+            <h6><b>See all</b></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Laboratory Products End-->
+
+    <!--Laboratrory Products-->
+    <div class="container down">
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHRqSY_nCcbR8xg9jkc6OYetMDoR3GZOqfxTiINiqVFHhrEOGgsawCmCX4-WwP13VfIvg&usqp=CAU"
+              class="card-img-top"
+              alt="Image 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Laboratory Coat</h5>
+              <p class="card-text">
+                Provide protection of skin and personal clothing from incidental
+                contact and small
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <h4><b>$85.00</b></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="https://albaladnews.net/assets/2020-01-14/images/263666_46_1578997331.jpg"
+              class="card-img-top"
+              alt="Image 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Blood Transfusion Kit</h5>
+              <p class="card-text">
+                Used determine whether your blood type is A, B, AB or O and
+                whether your blood is Rh
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <h4><b>$70.89</b></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="https://media.istockphoto.com/id/1249511656/photo/medical-syringe-on-blue-background.jpg?s=612x612&w=0&k=20&c=WQj-jDuwb3wH8CDn0g4phIdOqxHwRkUjdDRR_ODG8f4="
+              class="card-img-top"
+              alt="Image 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Syringes</h5>
+              <p class="card-text">
+                A small hollow tube used for injecting or withdrawing
+                liquids.And some liquid foods
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <h4><b>$98.78</b></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="https://cdn11.bigcommerce.com/s-u45hz/images/stencil/350x350/products/1879/4426/PYREX-Conical-Flask-4000ml-zoomed__23649.1707361166.jpg?c=2"
+              height="173px"
+              class="card-img-top"
+              alt="Image 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Volumetric Flask</h5>
+              <p class="card-text">
+                Wearing a mask is beneficial in offering protection from
+                pollution and allergens.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <h4><b>$45.20</b></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Featured Products Header-->
+    <div class="container height">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="align">
+            <h3><b>Featured Products</b></h3>
+            <h6><b>See all</b></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Featured Products End-->
+
+    <!--Featured Products-->
+    <div class="container down">
+      <div class="row space">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCsAx7xAssW2AA1Hrm-c_LnIPnFBsUjKksF9KnZNMMvw&s"
+              class="card-img-top"
+              alt="Image 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hand Sanitizer</h5>
+              <p class="card-text">
+                Provide protection of skin and our hands to prevent germs and
+                microbs
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <h4><b>$85.00</b></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="https://fovera.com/cdn/shop/files/AmazonListing-01.jpg?v=1698060144"
+              class="card-img-top"
+              alt="Image 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Wheel Chair</h5>
+              <p class="card-text">
+                Used to help people with walking disabilities to aid them in
+                walkiing well
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <h4><b>$70.89</b></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="https://5.imimg.com/data5/PU/FA/WE/SELLER-4973005/eye-protection-google.jpg"
+              class="card-img-top"
+              alt="Image 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Googles</h5>
+              <p class="card-text">
+                Used to prevent the eye when working with sparkling objects in
+                the laboratory
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <h4><b>$98.78</b></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="https://microscopes.com.au/cdn/shop/products/Optico-BM2000-Professional-Biological-Microscope_4000x@3x.progressive.jpg?v=1677478615"
+              height="260px"
+              class="card-img-top"
+              alt="Image 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Microscope</h5>
+              <p class="card-text">
+                Used to view objects that are very little to be seen with the
+                naked eyes
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <h4><b>$45.20</b></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--============Footer=============-->
+    <div class="background py-3">
+      <div class="col-md-8 offset-md-2">
+        <div class="row text-center">
+          <div class="col-md 4">
+            <h5 class="text-white weight">ABOUT</h5>
+            <div class="text-dark footer-links">
+              <p class="text-white">
+                Enth Health is a healthcare Organization created in 2024 by
+                leading oncologist
+              </p>
+
+              <a href="#" class="text-nowrap">Miss Suzzy Sena Ansah</a>
+            </div>
+          </div>
+          <div class="col-md 4">
+            <h5 class="text-white text-center weight">ADDRESS</h5>
+            <div class="text-dark footer-links text-center">
+              <p class="text-white">
+                No 24th Circle street, industrial area <br />Accra Ghana
+              </p>
+              <a href="" type="tel" class="text-nowrap">+233 595 063 612</a>
+              <a href="#" class="text-nowrap">help@gmail.com</a>
+              <a href="#" class="text-nowrap">princedelali30@gmail.com</a>
+            </div>
+          </div>
+          <div class="col-md 4">
+            <h5 class="text-white text-nowrap weight">OTHER</h5>
+            <div class="text-dark footer-links">
+              <a href="#" class="text-nowrap">Return and Refund Policy</a>
+              <a href="#" class="text-nowrap">Shopping Policy</a>
+              <a href="#" class="text-nowrap">Privacy Policy</a>
+              <a href="#" class="text-nowrap">Security</a>
+              <a href="#" class="text-nowrap">Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4">
+        <div class="row down">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="image1 social-links">
               <img
-                src="https://www.anesplus.com/wp-content/uploads/2016/09/Aespire-View-Vaporizer-Selection-1-570x600.jpg"
-                class="d-block w-100" alt="Carousel Image 2">
+                src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338507_1280.png"
+                alt=""
+                width="35px"
+                height=""
+              />
             </div>
-            <div class="carousel-item">
-              <img src="https://med-equip.ca/wp-content/uploads/2019/08/Physio-Control-Lifepak-20e-300x300.jpg"
-                class="d-block w-100" alt="Carousel Image 3">
+            <div class="image2 social-links">
+              <img
+                src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png"
+                alt=""
+                width="35px"
+                height=""
+              />
             </div>
-
-            <div class="carousel-item">
-              <img src="https://5.imimg.com/data5/BI/OS/SV/SELLER-38436992/edan-m3a-vital-sign-monitors-500x500.jpg"
-                class="d-block w-100" alt="Carousel Image 3">
+            <div class="image3 social-links">
+              <img
+                src="https://cdn-icons-png.freepik.com/256/124/124021.png?semt=ais_hybrid"
+                alt=""
+                width="35px"
+                height=""
+              />
+            </div>
+            <div class="image4 social-links">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/free-gmail-2981844-2476484.png?f=webp"
+                alt=""
+                width="35px"
+                height=""
+              />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-      </div>
-      <div class="col-md-4">
-        <img
-          src="https://5.imimg.com/data5/SELLER/Default/2021/12/WD/YX/PQ/13825225/12-1-patient-monitor-500x500-500x500.jpg"
-          class="img-fluid" alt="Image 3">
+        <p class="text-center text-white">&copy; 2024 Eith Health Service</p>
       </div>
     </div>
-  </div>
-  <!-- End Carousel Section -->
+    <!--=========End of Footer============-->
 
-  <!--Popular Products Header-->
-  <div class="container height">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="align">
-          <h3><b>Popular Products</b></h3>
-          <h6><b>See all</b></h6>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Popular Products End-->
-
-
-  <!--Popular Products-->
-  <div class="container down">
-    <div class="row">
-      <!-- Card 1 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <img
-            src="https://www.lakesidemedical.ca/app/uploads/featuredimage-The-Importance-of-Having-a-First-Aid-Kit-in-Your-Home-or-Place-of-Business.jpg"
-            class="card-img-top" alt="Image 1">
-          <div class="card-body">
-            <h5 class="card-title">First Aid Kit</h5>
-            <p class="card-text">Used treat common injuries such as cuts, scrapes, bruises, sprains, and more</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <h4><b>$34.67</b></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8SGwI5c7zyFCi_Ydd266f8rIEu7JaXKwLL-MRcx81WQ&s"
-            class="card-img-top" alt="Image 2">
-          <div class="card-body">
-            <h5 class="card-title">Thermometer</h5>
-            <p class="card-text">Used to measure the temperature of a body and also for substances</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <h4><b>$67.70</b></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <img src="https://wallpapers.com/images/featured/stethoscope-lyo42btur121xglr.jpg" class="card-img-top"
-            alt="Image 3">
-          <div class="card-body">
-            <h5 class="card-title">Stethoscope</h5>
-            <p class="card-text">It is used by a doctor to listen to your lungs and
-              heart to identify the root cause
-              of a problem</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <h4><b>$23.56</b></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <img
-            src="https://www.asiaone.com/sites/default/files/inline-images/https%20_hybrismediaprod.blob_.core_.windows.net_sys-master-phoenix-images-container_hf1_he4_9081225609246_RC81-03660100-0000-0.jpg"
-            class="card-img-top" alt="Image 4">
-          <div class="card-body">
-            <h5 class="card-title">Nose Mask</h5>
-            <p class="card-text">wearing a mask is beneficial in offering protection from pollution and allergens.</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <h4><b>$79.99</b></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Laboratory Products Header-->
-  <div class="container height">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="align">
-          <h3><b>Laboratory Products</b></h3>
-          <h6><b>See all</b></h6>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Laboratory Products End-->
-
-
-  <!--Laboratrory Products-->
-  <div class="container down">
-    <div class="row">
-      <!-- Card 1 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHRqSY_nCcbR8xg9jkc6OYetMDoR3GZOqfxTiINiqVFHhrEOGgsawCmCX4-WwP13VfIvg&usqp=CAU"
-            class="card-img-top" alt="Image 1">
-          <div class="card-body">
-            <h5 class="card-title">Laboratory Coat</h5>
-            <p class="card-text">Provide protection of skin and personal clothing from incidental contact and small</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <h4><b>$85.00</b></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <img src="https://albaladnews.net/assets/2020-01-14/images/263666_46_1578997331.jpg" class="card-img-top"
-            alt="Image 2">
-          <div class="card-body">
-            <h5 class="card-title">Blood Transfusion Kit</h5>
-            <p class="card-text">Used determine whether your blood type is A, B, AB or O and whether your blood is Rh
-            </p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <h4><b>$70.89</b></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <img
-            src="https://media.istockphoto.com/id/1249511656/photo/medical-syringe-on-blue-background.jpg?s=612x612&w=0&k=20&c=WQj-jDuwb3wH8CDn0g4phIdOqxHwRkUjdDRR_ODG8f4="
-            class="card-img-top" alt="Image 3">
-          <div class="card-body">
-            <h5 class="card-title">Syringes</h5>
-            <p class="card-text">A small hollow tube used for injecting or withdrawing liquids.And some liquid foods</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <h4><b>$98.78</b></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <img
-            src="https://cdn11.bigcommerce.com/s-u45hz/images/stencil/350x350/products/1879/4426/PYREX-Conical-Flask-4000ml-zoomed__23649.1707361166.jpg?c=2"
-            height="173px" class="card-img-top" alt="Image 4">
-          <div class="card-body">
-            <h5 class="card-title">Volumetric Flask</h5>
-            <p class="card-text">Wearing a mask is beneficial in offering protection from pollution and allergens.</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <h4><b>$45.20</b></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Featured Products Header-->
-  <div class="container height">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="align">
-          <h3><b>Featured Products</b></h3>
-          <h6><b>See all</b></h6>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Featured Products End-->
-
-
-  <!--Featured Products-->
-  <div class="container down">
-    <div class="row space">
-      <!-- Card 1 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCsAx7xAssW2AA1Hrm-c_LnIPnFBsUjKksF9KnZNMMvw&s"
-            class="card-img-top" alt="Image 1">
-          <div class="card-body">
-            <h5 class="card-title">Hand Sanitizer</h5>
-            <p class="card-text">Provide protection of skin and our hands to prevent germs and microbs</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <h4><b>$85.00</b></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <img src="https://fovera.com/cdn/shop/files/AmazonListing-01.jpg?v=1698060144" class="card-img-top"
-            alt="Image 2">
-          <div class="card-body">
-            <h5 class="card-title">Wheel Chair</h5>
-            <p class="card-text">Used to help people with walking disabilities to aid them in walkiing well</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <h4><b>$70.89</b></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <img src="https://5.imimg.com/data5/PU/FA/WE/SELLER-4973005/eye-protection-google.jpg" class="card-img-top"
-            alt="Image 3">
-          <div class="card-body">
-            <h5 class="card-title">Googles</h5>
-            <p class="card-text">Used to prevent the eye when working with sparkling objects in the laboratory </p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <h4><b>$98.78</b></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card">
-          <img
-            src="https://microscopes.com.au/cdn/shop/products/Optico-BM2000-Professional-Biological-Microscope_4000x@3x.progressive.jpg?v=1677478615"
-            height="260px" class="card-img-top" alt="Image 4">
-          <div class="card-body">
-            <h5 class="card-title">Microscope</h5>
-            <p class="card-text">Used to view objects that are very little to be seen with the naked eyes
-            </p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <h4><b>$45.20</b></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--============Footer=============-->
-  <div class="background py-3">
-    <div class="col-md-8 offset-md-2">
-      <div class="row text-center">
-        <div class="col-md 4">
-          <h5 class="text-white weight">ABOUT</h5>
-          <div class="text-dark footer-links">
-            <p class="text-white">
-              Enth Health is a healthcare Organization created in 2024 by leading oncologist
-            </p>
-
-            <a href="#" class="text-nowrap">Miss Suzzy Sena Ansah</a>
-          </div>
-        </div>
-        <div class="col-md 4">
-          <h5 class="text-white text-center weight">ADDRESS</h5>
-          <div class="text-dark footer-links text-center">
-            <p class="text-white">No 24th Circle street, industrial area <br />Accra Ghana</p>
-            <a href="" type="tel" class="text-nowrap">+233 595 063 612</a>
-            <a href="#" class="text-nowrap">help@gmail.com</a>
-            <a href="#" class="text-nowrap">princedelali30@gmail.com</a>
-          </div>
-        </div>
-        <div class="col-md 4">
-          <h5 class="text-white text-nowrap weight">OTHER</h5>
-          <div class="text-dark footer-links">
-            <a href="#" class="text-nowrap">Return and Refund Policy</a>
-            <a href="#" class="text-nowrap">Shopping Policy</a>
-            <a href="#" class="text-nowrap">Privacy Policy</a>
-            <a href="#" class="text-nowrap">Security</a>
-            <a href="#" class="text-nowrap">Services</a>
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="container mt-4">
-      <div class="row down">
-        <div class="col-md-12 d-flex justify-content-center">
-          <div class="image1 social-links"><img
-              src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338507_1280.png" alt="" width="35px"
-              height=""></div>
-          <div class="image2 social-links"><img
-              src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png" alt="" width="35px"
-              height=""></div>
-          <div class="image3 social-links"><img
-              src="https://cdn-icons-png.freepik.com/256/124/124021.png?semt=ais_hybrid" alt="" width="35px" height="">
-          </div>
-          <div class="image4 social-links"><img
-              src="https://cdn.iconscout.com/icon/free/png-256/free-gmail-2981844-2476484.png?f=webp" alt=""
-              width="35px" height=""></div>
-        </div>
-      </div>
-      <p class="text-center text-white">&copy; 2024 Eith Health Service</p>
-    </div>
-  </div>
-  <!--=========End of Footer============-->
-
-
-
-
-  <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-</body>
-
+    <!-- Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  </body>
 </html>
