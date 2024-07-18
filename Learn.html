@@ -1,323 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <!-- Custom CSS -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: white;
-            color: #333;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: #333;
+      }
 
-        /* Navigation */
-        .navbar-nav .nav-link {
-            font-size: x-large;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            margin-right: 10px;
-            color: black !important;
-            margin-left: 20px;
-        }
+      /* Navigation */
+      .navbar-nav .nav-link {
+        font-size: x-large;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin-right: 10px;
+        color: black !important;
+        margin-left: 20px;
+      }
 
-        .nav-link:hover {
-            /* text-decoration: underline; */
-            border-bottom: 2px solid var(--background-color);
-        }
+      .nav-link:hover {
+        /* text-decoration: underline; */
+        border-bottom: 2px solid var(--background-color);
+      }
 
-        .btn {
-            font-weight: 800;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            width: 90px;
-            height: 40px;
-            background-color: var(--background-color);
-            color: white;
-            margin-right: 30px;
-            border-radius: 6px;
-        }
+      .btn {
+        font-weight: 800;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        width: 90px;
+        height: 40px;
+        background-color: var(--background-color);
+        color: white;
+        margin-right: 30px;
+        border-radius: 6px;
+      }
 
-        .btn:hover {
-            color: white;
-            background-color: var(--hover-color);
-        }
+      .btn:hover {
+        color: white;
+        background-color: var(--hover-color);
+      }
 
-        .container {
-            margin-top: 50px;
-        }
+      .container {
+        margin-top: 50px;
+      }
 
-        .card {
-            border-radius: 15px;
-            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease;
-        }
+      .card {
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+      }
 
-        .card:hover {
-            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-        }
+      .card:hover {
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+      }
 
-        .card-title {
-            color: #007bff;
-        }
+      .card-title {
+        color: #007bff;
+      }
 
-        .card-text {
-            font-size: 16px;
-        }
+      .card-text {
+        font-size: 16px;
+      }
 
+      .footer-links {
+        font-size: 14px;
+        margin-top: 15px;
+        line-height: 30px;
+      }
 
-        .footer-links {
-            font-size: 14px;
-            margin-top: 15px;
-            line-height: 30px;
-        }
+      .footer-links a {
+        text-decoration: none;
+        color: var(--background-color);
+        display: block;
+      }
 
-        .footer-links a {
-            text-decoration: none;
-            color: var(--background-color);
-            display: block;
-        }
+      .footer-links a:hover {
+        color: var(--hover-color);
+        text-decoration: underline;
+      }
 
-        .footer-links a:hover {
-            color: var(--hover-color);
-            text-decoration: underline;
-        }
+      .social-links {
+        align-content: center;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
 
-        .social-links {
-            align-content: center;
-            padding: 10px 20px;
-            cursor: pointer;
+      .background {
+        background-color: var(--background-color);
+      }
 
-        }
+      .footer-links a {
+        color: white;
+        line-height: 35px;
+        text-decoration: none;
+      }
 
-
-        .background {
-            background-color: var(--background-color)
-        }
-
-        .footer-links a {
-            color: white;
-            line-height: 35px;
-            text-decoration: none;
-        }
-
-        :root {
-            --background-color: #274848;
-            --hover-color: #498787;
-        }
+      :root {
+        --background-color: #274848;
+        --hover-color: #498787;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="https://assets-global.website-files.com/63a9fb94e473f36dbe99c1b1/651bc933da4c4809317d9721_kXa8JqIBRnCMtZnHkb1u.png"
-                    alt="Logo" width="130px" height="90px">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAlgtMarkup">
-                <div class="navbar-nav mx-auto">
-                    <a class="nav-link" href="Med.html">Home</a>
-                    <a class="nav-link" href="Services.html">Services</a>
-                    <a class="nav-link" href="Learn.html">Learn</a>
-                    <a class="nav-link" href="Blog.html">Blog</a>
-                    <a class="nav-link" href="Shop.html">Shop</a>
-                    <a class="nav-link" href="Account.html">Account</a>
-                </div>
-                <form class="d-flex justify-content-between">
-                    <a class="btn btn-primary" href="Login.html" role="button">Login</a>
-                    <a class="btn btn-primary" href="SignUp.html" role="button">Sign Up</a>
-                </form>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://assets-global.website-files.com/63a9fb94e473f36dbe99c1b1/651bc933da4c4809317d9721_kXa8JqIBRnCMtZnHkb1u.png"
+            alt="Logo"
+            width="130px"
+            height="90px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Learn.html">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Account.html">Account</a>
+            </li>
+          </div>
+
+          <form class="form-inline d-flex justify-content-between">
+            <a class="btn btn-primary" href="Login.html" role="button">Login</a>
+            <a class="btn btn-primary" href="SignUp.html" role="button"
+              >Sign Up</a
+            >
+          </form>
         </div>
+      </div>
     </nav>
+    <!-- End of Navigation -->
 
     <div class="container">
-        <h1 class="text-center mt-5 mb-4">Learn About Diseases and Treatments</h1>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://weillcornell.org/sites/default/files/styles/custom__1440x960_/public/news_images/shutterstock_1033367926.jpeg?itok=DEmcdct-"
-                        class="card-img-top" alt="Diabetes Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Diabetes</h5>
-                        <p class="card-text">Diabetes is a chronic metabolic disorder characterized by elevated levels
-                            of glucose (sugar) in the blood. </p>
-                        <a href="#" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
+      <h1 class="text-center mt-5 mb-4">Learn About Diseases and Treatments</h1>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://weillcornell.org/sites/default/files/styles/custom__1440x960_/public/news_images/shutterstock_1033367926.jpeg?itok=DEmcdct-"
+              class="card-img-top"
+              alt="Diabetes Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Diabetes</h5>
+              <p class="card-text">
+                Diabetes is a chronic metabolic disorder characterized by
+                elevated levels of glucose (sugar) in the blood.
+              </p>
+              <a href="#" class="btn btn-primary">Read</a>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://res.cloudinary.com/dycihkdzs/image/upload/c_fill,f_auto/cloud/download/serangan-jantung-penyebab-gejala-dan-pertolongan-pertama-2-21032023-053824.jpg"
-                        class="card-img-top" alt="Heart Disease Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Heart Disease</h5>
-                        <p class="card-text">Heart disease refers to a range of conditions that affect the heart,
-                            including coronary artery disease</p>
-                        <a href="#" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.choc.org/wp/wp-content/uploads/2021/03/CHOC-Oncology.png" class="card-img-top"
-                        alt="Cancer Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Cancer</h5>
-                        <p class="card-text">Cancer is a group of diseases characterized by the uncontrolled growth and
-                            spread of abnormal cells in the body.</p>
-                        <a href="#" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://cdn.modernghana.com/content__/640/457/pulw50anm2_hivaidspatients.jpg"
-                        class="card-img-top" alt="Diabetes Image">
-                    <div class="card-body">
-                        <h5 class="card-title">HIV/AIDS</h5>
-                        <p class="card-text">HIV/AIDS is a viral infection caused by the human immunodeficiency virus
-                            (HIV). HIV attacks the body's immune system</p>
-                        <a href="#" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://scx1.b-cdn.net/csz/news/800a/2020/deathanddisa.jpg" height="245">
-                    <div class="card-body">
-                        <h5 class="card-title">Stroke</h5>
-                        <p class="card-text">A stroke, also known as a cerebrovascular accident (CVA), occurs when there
-                            is a disruption in the blood supply to the brain.</p>
-                        <a href="#" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://fromthehearthomecaresc.com/wp-content/uploads/2023/05/10-Signs-death-is-near-Dementia-Patients-Death-Is-Near-Know-This-min-1.jpg"
-                        class="card-img-top" alt="Cancer Image" height="245">
-                    <div class="card-body">
-                        <h5 class="card-title">Dymentia</h5>
-                        <p class="card-text">Dementia is a general term used to describe a decline in cognitive function
-                            severe enough to interfere with daily life.</p>
-                        <a href="#" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.verywellhealth.com/thmb/DD_iF6iU13Gqb5G-Al_jq5Sv-To=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1206746720-4c7595bd8b5b42fa975d3dffd4afab03.jpg"
-                        class="card-img-top" alt="Diabetes Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Lung Cancer</h5>
-                        <p class="card-text">Lung cancer is a type of cancer that starts in the lungs and can spread to
-                            other parts of the body.</p>
-                        <a href="#" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://australian.physio/sites/default/files/HomepageNewsImages/800-600-Exercise-rehabilitation-for-patients-following-surgery-for-lung-cancer.jpg"
-                        height="230">
-                    <div class="card-body">
-                        <h5 class="card-title">Arthritis</h5>
-                        <p class="card-text">Arthritis is a broad term that refers to inflammation of one or more
-                            joints, leading to pain, swelling, stiffness, and decreased</p>
-                        <a href="#" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img
-                        src="https://www.cidrap.umn.edu/sites/default/files/styles/article_detail/public/article/iStock-1371550663.jpg?itok=IFLe4xIY">
-                    <div class="card-body">
-                        <h5 class="card-title">COVID-19</h5>
-                        <p class="card-text">COVID-19, short for "coronavirus disease 2019," is an infectious disease
-                            caused by the severe acute respiratory syndrome..</p>
-                        <a href="#" class="btn btn-primary">Read</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add more disease cards as needed -->
+          </div>
         </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://res.cloudinary.com/dycihkdzs/image/upload/c_fill,f_auto/cloud/download/serangan-jantung-penyebab-gejala-dan-pertolongan-pertama-2-21032023-053824.jpg"
+              class="card-img-top"
+              alt="Heart Disease Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Heart Disease</h5>
+              <p class="card-text">
+                Heart disease refers to a range of conditions that affect the
+                heart, including coronary artery disease
+              </p>
+              <a href="#" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://www.choc.org/wp/wp-content/uploads/2021/03/CHOC-Oncology.png"
+              class="card-img-top"
+              alt="Cancer Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cancer</h5>
+              <p class="card-text">
+                Cancer is a group of diseases characterized by the uncontrolled
+                growth and spread of abnormal cells in the body.
+              </p>
+              <a href="#" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://cdn.modernghana.com/content__/640/457/pulw50anm2_hivaidspatients.jpg"
+              class="card-img-top"
+              alt="Diabetes Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">HIV/AIDS</h5>
+              <p class="card-text">
+                HIV/AIDS is a viral infection caused by the human
+                immunodeficiency virus (HIV). HIV attacks the body's immune
+                system
+              </p>
+              <a href="#" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://scx1.b-cdn.net/csz/news/800a/2020/deathanddisa.jpg"
+              height="245"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Stroke</h5>
+              <p class="card-text">
+                A stroke, also known as a cerebrovascular accident (CVA), occurs
+                when there is a disruption in the blood supply to the brain.
+              </p>
+              <a href="#" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://fromthehearthomecaresc.com/wp-content/uploads/2023/05/10-Signs-death-is-near-Dementia-Patients-Death-Is-Near-Know-This-min-1.jpg"
+              class="card-img-top"
+              alt="Cancer Image"
+              height="245"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dymentia</h5>
+              <p class="card-text">
+                Dementia is a general term used to describe a decline in
+                cognitive function severe enough to interfere with daily life.
+              </p>
+              <a href="#" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://www.verywellhealth.com/thmb/DD_iF6iU13Gqb5G-Al_jq5Sv-To=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1206746720-4c7595bd8b5b42fa975d3dffd4afab03.jpg"
+              class="card-img-top"
+              alt="Diabetes Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lung Cancer</h5>
+              <p class="card-text">
+                Lung cancer is a type of cancer that starts in the lungs and can
+                spread to other parts of the body.
+              </p>
+              <a href="#" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://australian.physio/sites/default/files/HomepageNewsImages/800-600-Exercise-rehabilitation-for-patients-following-surgery-for-lung-cancer.jpg"
+              height="230"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Arthritis</h5>
+              <p class="card-text">
+                Arthritis is a broad term that refers to inflammation of one or
+                more joints, leading to pain, swelling, stiffness, and decreased
+              </p>
+              <a href="#" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://www.cidrap.umn.edu/sites/default/files/styles/article_detail/public/article/iStock-1371550663.jpg?itok=IFLe4xIY"
+            />
+            <div class="card-body">
+              <h5 class="card-title">COVID-19</h5>
+              <p class="card-text">
+                COVID-19, short for "coronavirus disease 2019," is an infectious
+                disease caused by the severe acute respiratory syndrome..
+              </p>
+              <a href="#" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more disease cards as needed -->
+      </div>
     </div>
 
     <!--============Footer=============-->
     <div class="background py-3">
-        <div class="col-md-8 offset-md-2">
-            <div class="row text-center">
-                <div class="col-md 4">
-                    <h5 class="text-white weight">ABOUT</h5>
-                    <div class="text-dark footer-links">
-                        <p class="text-white">
-                            Enth Health is a healthcare Organization created in 2024 by leading oncologist
-                        </p>
+      <div class="col-md-8 offset-md-2">
+        <div class="row text-center">
+          <div class="col-md 4">
+            <h5 class="text-white weight">ABOUT</h5>
+            <div class="text-dark footer-links">
+              <p class="text-white">
+                Enth Health is a healthcare Organization created in 2024 by
+                leading oncologist
+              </p>
 
-                        <a href="#" class="text-nowrap">Miss Suzzy Sena Ansah</a>
-                    </div>
-                </div>
-                <div class="col-md 4">
-                    <h5 class="text-white text-center weight">ADDRESS</h5>
-                    <div class="text-dark footer-links text-center">
-                        <p class="text-white">No 24th Circle street, industrial area <br />Accra Ghana</p>
-                        <a href="" type="tel" class="text-nowrap">+233 595 063 612</a>
-                        <a href="#" class="text-nowrap">help@gmail.com</a>
-                        <a href="#" class="text-nowrap">princedelali30@gmail.com</a>
-                    </div>
-                </div>
-                <div class="col-md 4">
-                    <h5 class="text-white text-nowrap weight">OTHER</h5>
-                    <div class="text-dark footer-links">
-                        <a href="#" class="text-nowrap">Return and Refund Policy</a>
-                        <a href="#" class="text-nowrap">Shopping Policy</a>
-                        <a href="#" class="text-nowrap">Privacy Policy</a>
-                        <a href="#" class="text-nowrap">Security</a>
-                        <a href="#" class="text-nowrap">Services</a>
-
-                    </div>
-                </div>
-
+              <a href="#" class="text-nowrap">Miss Suzzy Sena Ansah</a>
             </div>
-
-        </div>
-
-        <div class="container mt-4">
-            <div class="row down">
-                <div class="col-md-12 d-flex justify-content-center">
-                    <div class="image1 social-links"><img
-                            src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338507_1280.png" alt=""
-                            width="35px" height=""></div>
-                    <div class="image2 social-links"><img
-                            src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png" alt=""
-                            width="35px" height=""></div>
-                    <div class="image3 social-links"><img
-                            src="https://cdn-icons-png.freepik.com/256/124/124021.png?semt=ais_hybrid" alt=""
-                            width="35px" height="">
-                    </div>
-                    <div class="image4 social-links"><img
-                            src="https://cdn.iconscout.com/icon/free/png-256/free-gmail-2981844-2476484.png?f=webp"
-                            alt="" width="35px" height=""></div>
-                </div>
+          </div>
+          <div class="col-md 4">
+            <h5 class="text-white text-center weight">ADDRESS</h5>
+            <div class="text-dark footer-links text-center">
+              <p class="text-white">
+                No 24th Circle street, industrial area <br />Accra Ghana
+              </p>
+              <a href="" type="tel" class="text-nowrap">+233 595 063 612</a>
+              <a href="#" class="text-nowrap">help@gmail.com</a>
+              <a href="#" class="text-nowrap">princedelali30@gmail.com</a>
             </div>
-            <p class="text-center text-white">&copy; 2024 Eith Health Service</p>
+          </div>
+          <div class="col-md 4">
+            <h5 class="text-white text-nowrap weight">OTHER</h5>
+            <div class="text-dark footer-links">
+              <a href="#" class="text-nowrap">Return and Refund Policy</a>
+              <a href="#" class="text-nowrap">Shopping Policy</a>
+              <a href="#" class="text-nowrap">Privacy Policy</a>
+              <a href="#" class="text-nowrap">Security</a>
+              <a href="#" class="text-nowrap">Services</a>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="container mt-4">
+        <div class="row down">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="image1 social-links">
+              <img
+                src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338507_1280.png"
+                alt=""
+                width="35px"
+                height=""
+              />
+            </div>
+            <div class="image2 social-links">
+              <img
+                src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png"
+                alt=""
+                width="35px"
+                height=""
+              />
+            </div>
+            <div class="image3 social-links">
+              <img
+                src="https://cdn-icons-png.freepik.com/256/124/124021.png?semt=ais_hybrid"
+                alt=""
+                width="35px"
+                height=""
+              />
+            </div>
+            <div class="image4 social-links">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/free-gmail-2981844-2476484.png?f=webp"
+                alt=""
+                width="35px"
+                height=""
+              />
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-white">&copy; 2024 Eith Health Service</p>
+      </div>
     </div>
     <!--=========End of Footer============-->
-
 
     <!-- Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -325,7 +418,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Font Awesome JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-
-</body>
-
+  </body>
 </html>
